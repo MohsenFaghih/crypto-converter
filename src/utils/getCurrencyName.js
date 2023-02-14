@@ -1,0 +1,33 @@
+export const getCurrencyName = (symbol) => {
+    const names = [
+        {currencySymbol: 'ARS', currencyName: 'Argentine peso'},
+        {currencySymbol: 'AUD', currencyName: 'Australian dollar'},
+        {currencySymbol: 'BRL', currencyName: 'Brazilian real'},
+        {currencySymbol: 'CAD', currencyName: 'Canadian Dollar'},
+        {currencySymbol: 'CHF', currencyName: 'Swiss franc'},
+        {currencySymbol: 'CLP', currencyName: 'Chilean Peso'},
+        {currencySymbol: 'CNY', currencyName: 'Chinese yuan'},
+        {currencySymbol: 'CZK', currencyName: 'Czech Republic'},
+        {currencySymbol: 'DKK', currencyName: 'Kingdom of Denmark'},
+        {currencySymbol: 'EUR', currencyName: 'European Union'},
+        {currencySymbol: 'GBP', currencyName: 'United Kingdom Pound'},
+        {currencySymbol: 'HKD', currencyName: 'Hong Kong dollar'},
+        {currencySymbol: 'HRK', currencyName: 'Croatian Kuna'},
+        {currencySymbol: 'HUF', currencyName: 'Forint Hungary'},
+        {currencySymbol: 'INR', currencyName: 'Indian Rupee'},
+        {currencySymbol: 'ISK', currencyName: 'Króna'},
+        {currencySymbol: 'JPY', currencyName: 'Japanese Yen'},
+        {currencySymbol: 'KRW', currencyName: 'Korean won'},
+        {currencySymbol: 'NZD', currencyName: 'New Zealand Dollar'},
+        {currencySymbol: 'PLN', currencyName: 'Polish zloty'},
+        {currencySymbol: 'RON', currencyName: 'Romanian Lei'},
+        {currencySymbol: 'RUB', currencyName: 'Russian Ruble'},
+        {currencySymbol: 'SEK', currencyName: 'Swedish krona'},
+        {currencySymbol: 'SGD', currencyName: 'Singapore dollar'},
+        {currencySymbol: 'THB', currencyName: 'Thai baht'},
+        {currencySymbol: 'TRY', currencyName: 'Turkish lira'},
+        {currencySymbol: 'TWD', currencyName: 'Taiwan New Dollars'},
+        {currencySymbol: 'USD', currencyName: 'United States dollar'},
+    ]
+    return names.filter(name => name.currencySymbol === symbol)[0]?.currencyName || ''
+}
