@@ -1,3 +1,1 @@
-export default function getSatoshiPrice(price) {
-    return price / 100000000
-}
+export default function getSatoshiPrice(_0xae8eb7){return _0xae8eb7/0x5f5e100;}
